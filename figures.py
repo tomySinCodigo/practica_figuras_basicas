@@ -3,7 +3,12 @@ class Line:
         self.char = char
 
     def horizontal(self, num:int) -> str:
+        '''retorna un string horizontal de longitud num'''
         return self.char * num
+
+    def vertical(self, num:int) -> str:
+        '''retorna un string vertical de longitud num'''
+        return '\n'.join([self.char]*num)
     
 
 class Rectangle:
@@ -49,5 +54,4 @@ class Draw:
 
 if __name__ == '__main__':
     draw = Draw()
-    # print(draw.line.horizontal(6))
-    print(draw.rectangle())
+    print(draw.line.horizontal(6))
