@@ -1,3 +1,3 @@
-# Figuras BaSiCas error en el titulo adsdgggfd
+# Figuras Basicas
 
-usando python para realizar algunas figuras basicas
+realizando figuras basicas usando python
