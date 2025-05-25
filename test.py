@@ -6,6 +6,7 @@ def test() -> str:
     text = 'TEST\n'
     text += f'Linea horizontal:\n{draw.line.horizontal(8)}\n\n'
     text += f'Linea vertical:\n{draw.line.vertical(8)}\n\n'
+    text += f'Rectangulo:\n{draw.rectangle(width=10, height=4, outline=False)}\n\n'
 
     return text
 
