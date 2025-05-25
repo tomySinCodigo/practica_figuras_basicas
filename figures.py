@@ -54,4 +54,5 @@ class Draw:
 
 if __name__ == '__main__':
     draw = Draw()
-    print(draw.line.horizontal(6))
+    # print(draw.line.horizontal(6))
+    print(draw.rectangle())
