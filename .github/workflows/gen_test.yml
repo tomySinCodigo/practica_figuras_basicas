@@ -1,0 +1,27 @@
+name: python run test
+on: [workflow_dispatch]
+
+jobs:
+  inicializa:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: use checkout
+      uses: actions/checkout@v4
+
+    - name: test install python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.13'
+
+    - name: verifica la version
+      run: python --version
+
+    - name: run python test
+      run: python test.py
+
+    - name: upload artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: test gen
+        path: salida_test.txt
